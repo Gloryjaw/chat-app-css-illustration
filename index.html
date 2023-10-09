@@ -5,47 +5,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Chat app css illustration </title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main>
+    <section class="main__phone">
+ 
+      <section class="phone__header">
+        <div class="header__notch">
+        </div>
+        <div class="header__id-section">
+          <i class="fa-solid fa-angle-up fa-rotate-270" style="color: #dfdfdf;"></i>
+          <img class="header__avatar"  src="/images/avatar.jpg" alt="">
+          <div class="header__info">
+            <p id="sender_name">Samuel Green</p>
+            <p id="sender_status">Available to Walk</p> 
+          </div>
+          <i class="header__dots fa-solid fa-ellipsis-vertical" style="color: #d2d2d2;"></i>
+        </div>
 
-  Samuel Green
-  Available to Walk
 
-  That sounds great. I’d be happy with that.
 
-  Could you send over some pictures of your dog, please?
+      </section>
+      <section class="phone__chat">
+        <p class="chat__rec" id="rec1">That sounds great. I’d be happy to discuss more.</p>
+        <p class="chat__rec" id = "rec2">Could you send over some pictures of your dog, please?</p>
+        <p class="chat__sent chat__sent--images" id="sent1">
+          <img src="./images/dog-image-1.jpg" alt=""><img src="./images/dog-image-2.jpg" alt=""><img src="./images/dog-image-3.jpg" alt="">
+        </p>
+        <p class="chat__sent chat__sent--message" id="sent2">Here are a few pictures. She’s a happy girl!</p>
+        <p class="chat__sent chat__sent--message chat__sent--small" id ="sent3">Can you make it?</p>
+        <p class="chat__rec" id="rec3">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+        <section class="chat__price">
+          <div class="price__radio"></div>
+          <p class="price__text" id="rec4">30 minute walk</p>
+          <p class="price__price">$29</p>
+        </section>
+        <section class="chat__price chat__price--btm">
+          <div class="price__radio"></div>
+          <p class="price__text" id="rec5">1 hour walk</p>
+          <p class="price__price">$49</p>
+        </section>
 
-  Here are a few pictures. She’s a happy girl!
+        <section class="chat__input">
+          <p class="input__text">Type a message…</p>
+          <div class="input__send-btn">
+            <i class="fa-solid fa-angle-up fa-rotate-90" style="color: #ffffff;"></i>
+          </div>
+          
+        </section>
+        
+        
+      </section>
 
-  Can you make it?
+        
+        
 
-  She looks so happy! The time we discussed works. How long shall I take her out for?
 
-  30 minute walk
-  $29
+    </section>
+    <section class="main__article-section">
+      <h1 class="article-section__heading">
+        Simple booking
+      </h1>
+      <p class="article-section__para">
+        Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+        discuss arrangements and make bookings. Once the walk has been completed you can rate 
+        your walker and book again all through the chat.
+      </p>
 
-  1 hour walk
-  $49
+    </section>
 
-  Type a message…
+  </main>
 
-  Simple booking
-
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-  discuss arrangements and make bookings. Once the walk has been completed you can rate 
-  your walker and book again all through the chat.
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
 </body>
+<script src="https://kit.fontawesome.com/88bc3e9469.js" crossorigin="anonymous"></script>
 </html>
